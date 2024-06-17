@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Path of Defender", "Path of Defender\Path of Defender.csproj", "{E816C158-E1BD-4874-B751-7EE728CECADD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monster Editor", "Monster Editor\Monster Editor.csproj", "{720F819D-A685-4335-AF56-5306FD0B7AA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Passive Skill Tree Editor", "Passive Skill Tree Editor\Passive Skill Tree Editor.csproj", "{E368A0B1-400E-4E63-BF8C-4241374B0ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Item Editor", "Item Editor\Item Editor.csproj", "{6D025653-21FF-43F2-8A36-0B59007CB921}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E816C158-E1BD-4874-B751-7EE728CECADD}.Debug|x86.ActiveCfg = Release|x86
+		{E816C158-E1BD-4874-B751-7EE728CECADD}.Debug|x86.Build.0 = Release|x86
+		{E816C158-E1BD-4874-B751-7EE728CECADD}.Release|x86.ActiveCfg = Release|x86
+		{E816C158-E1BD-4874-B751-7EE728CECADD}.Release|x86.Build.0 = Release|x86
+		{720F819D-A685-4335-AF56-5306FD0B7AA2}.Debug|x86.ActiveCfg = Release|x86
+		{720F819D-A685-4335-AF56-5306FD0B7AA2}.Debug|x86.Build.0 = Release|x86
+		{720F819D-A685-4335-AF56-5306FD0B7AA2}.Release|x86.ActiveCfg = Release|x86
+		{720F819D-A685-4335-AF56-5306FD0B7AA2}.Release|x86.Build.0 = Release|x86
+		{E368A0B1-400E-4E63-BF8C-4241374B0ABE}.Debug|x86.ActiveCfg = Release|x86
+		{E368A0B1-400E-4E63-BF8C-4241374B0ABE}.Debug|x86.Build.0 = Release|x86
+		{E368A0B1-400E-4E63-BF8C-4241374B0ABE}.Release|x86.ActiveCfg = Release|x86
+		{E368A0B1-400E-4E63-BF8C-4241374B0ABE}.Release|x86.Build.0 = Release|x86
+		{6D025653-21FF-43F2-8A36-0B59007CB921}.Debug|x86.ActiveCfg = Release|x86
+		{6D025653-21FF-43F2-8A36-0B59007CB921}.Debug|x86.Build.0 = Release|x86
+		{6D025653-21FF-43F2-8A36-0B59007CB921}.Release|x86.ActiveCfg = Release|x86
+		{6D025653-21FF-43F2-8A36-0B59007CB921}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E816C158-E1BD-4874-B751-7EE728CECADD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Path_of_Defender</RootNamespace>
+    <AssemblyName>Path of Defender</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\output\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DebugSymbols>true</DebugSymbols>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <FileAlignment>8192</FileAlignment>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>X.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SharpDX">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Toolkit">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Toolkit.Game">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Toolkit.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Toolkit.Graphics">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Toolkit.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Toolkit.Input">
+      <HintPath>$(SharpDXPackageBinDir)\SharpDX.Toolkit.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Graphics\Lightning.cs" />
+    <Compile Include="Images.cs" />
+    <Compile Include="Abstract Objects.cs" />
+    <Compile Include="Main Game.cs" />
+    <Compile Include="Main Game.designer.cs">
+      <DependentUpon>Main Game.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\Menu.cs" />
+    <Compile Include="Monster\Map.cs" />
+    <Compile Include="Monster\Monster.cs" />
+    <Compile Include="Menus\Menu.designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other\Extensions.cs" />
+    <Compile Include="Skills Buffs\Buffs.cs" />
+    <Compile Include="Skills Buffs\Flask Buff.cs" />
+    <Compile Include="Skills Buffs\Mana Shield.cs" />
+    <Compile Include="Skills Buffs\Vitality.cs" />
+    <Compile Include="Skills\Arc.cs" />
+    <Compile Include="Skills\Barrage.cs" />
+    <Compile Include="Skills\Default Attack.cs" />
+    <Compile Include="Skills\Firestorm.cs" />
+    <Compile Include="Skills\FrostNova.cs" />
+    <Compile Include="Skills\Skill Object.cs" />
+    <Compile Include="Skills\Spectral Throw.cs" />
+    <Compile Include="Skills\Split Arrow.cs" />
+    <Compile Include="Skills\Trap.cs" />
+    <Compile Include="System Item\Item Struct.cs" />
+    <Compile Include="System Item\Items.cs" />
+    <Compile Include="System Item\Items.designer.cs">
+      <DependentUpon>Items.cs</DependentUpon>
+    </Compile>
+    <Compile Include="System Item\System Drop Item.cs" />
+    <Compile Include="Virtual Controls\Inventory\Belt Flasks.cs" />
+    <Compile Include="Virtual Controls\Inventory\Custom Inventory.cs" />
+    <Compile Include="Virtual Controls\Inventory\Inventory Belt.cs" />
+    <Compile Include="Virtual Controls\Inventory\Inventory Belt.designer.cs">
+      <DependentUpon>Inventory Belt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Controls\Inventory\Inventory Full Set.cs" />
+    <Compile Include="Virtual Controls\Inventory\Inventory One.cs" />
+    <Compile Include="Virtual Controls\Inventory\Inventory One.designer.cs">
+      <DependentUpon>Inventory One.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Controls\Inventory\Inventory.cs" />
+    <Compile Include="Virtual Controls\Inventory\Inventory.designer.cs">
+      <DependentUpon>Inventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Virtual Controls\ListView.cs" />
+    <Compile Include="Virtual Controls\Passive Tree.Designer.cs">
+      <DependentUpon>Passive Tree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Skills\Skills.cs" />
+    <Compile Include="Virtual Controls\StatusControl.cs" />
+    <Compile Include="Virtual Controls\Virtual.cs" />
+    <Compile Include="Virtual Controls\Passive Tree.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Other\e.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="X.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
